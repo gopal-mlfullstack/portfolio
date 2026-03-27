@@ -1,5 +1,6 @@
 import Image from "next/image";
 import profilePic from "../public/me.png";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -28,12 +29,18 @@ export default function HeroSection() {
           <div className="flex gap-4">
             {" "}
             {/* Button row */}
-            <button className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition-colors">
+            <Link
+              href="#projects"
+              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg"
+            >
               View Work
-            </button>
-            <button className="px-6 py-3 border border-purple-500 text-purple-400 hover:bg-purple-500/10 rounded-lg font-medium transition-colors">
+            </Link>
+            <Link
+              href="#contact"
+              className="px-6 py-3 border border-purple-500 text-purple-400 rounded-lg"
+            >
               Contact Me
-            </button>
+            </Link>
           </div>
         </div>
         {/* -------------------------------------------------------   */}{" "}
