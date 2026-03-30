@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProjectPasswordGenerator from "../public/password_genrator.png";
+import AITaskFlow from "../public/ai_task_generator.png";
 import Image from "next/image";
 export default function ProjectSection() {
   return (
@@ -41,6 +42,7 @@ export default function ProjectSection() {
             <div className="p-6 flex flex-col gap-4">
               {" "}
               {/* card body  */}
+              {/* Project 001 */}
               <h3 className="text-white font-semibold text-lg">
                 Simple Password Generator
               </h3>
@@ -65,6 +67,62 @@ export default function ProjectSection() {
                 {/* links row */}
                 <Link
                   href="https://github.com/gopal-mlfullstack/simple-password-system-"
+                  className="text-sm text-purple-400 hover:text-purple-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* project card - AI TaskFlow */}
+          <div className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-colors">
+            {/* card top - color banner since no image yet */}
+            <div className="w-full h-48 bg-gradient-to-br from-blue-900/60 via-purple-900/60 to-gray-900 flex items-center justify-center">
+              <Image
+                src={AITaskFlow}
+                alt="AI Task Generator"
+                className="w-full h-48 object-cover"
+              ></Image>
+            </div>
+
+            <div className="p-6 flex flex-col gap-4">
+              {/* Project title */}
+              <h3 className="text-white font-semibold text-lg">AI TaskFlow</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Intelligent task manager with AI-powered priority suggestions,
+                description rewriting, and subtask generation via Groq LLM.
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {/* tech stack tags */}
+                <span className="text-xs px-3 py-1 rounded-full bg-purple-900/40 text-purple-300 border border-purple-800/50">
+                  Next.js
+                </span>
+                <span className="text-xs px-3 py-1 rounded-full bg-purple-900/40 text-purple-300 border border-purple-800/50">
+                  FastAPI
+                </span>
+                <span className="text-xs px-3 py-1 rounded-full bg-purple-900/40 text-purple-300 border border-purple-800/50">
+                  Supabase
+                </span>
+                <span className="text-xs px-3 py-1 rounded-full bg-purple-900/40 text-purple-300 border border-purple-800/50">
+                  Groq AI
+                </span>
+              </div>
+
+              <div className="flex gap-4 mt-2">
+                {/* links */}
+                <Link
+                  href="https://ai-taskflow-frontend.vercel.app/dashboard"
+                  className="text-sm text-purple-400 hover:text-purple-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </Link>
+                <Link
+                  href="https://github.com/gopal-mlfullstack/ai-taskflow-frontend-"
                   className="text-sm text-purple-400 hover:text-purple-300 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"

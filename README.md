@@ -38,5 +38,3 @@ This is my personal portfolio website built to showcase my projects and skills a
 ⭐ This portfolio is a work in progress as I continue learning and building more projects.
 
 ---
-
-Would you like me to add any other sections or details?
