@@ -1,7 +1,3 @@
-Your README is clear and well-structured. I made a few minor corrections for clarity and consistency, including fixing the closing parenthesis in the live demo link and adding some formatting consistency. Here's the revised version:
-
----
-
 # 🌐 My Portfolio
 
 This is my personal portfolio website built to showcase my projects and skills as I learn full-stack development.
